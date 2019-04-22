@@ -1,0 +1,17 @@
+/*font-family: 'Cute Font', cursive;
+font-family: 'Montserrat', sans-serif;*/
+
+body {
+    background-color: pink;
+}
+h1, h2, h3 {
+    font-family: 'Cute Font', cursive;
+}
+
+p, li {
+    font-family: "Montserrat", sans-serif;
+}
+h3 {
+
+    font-size: 30px;
+}
