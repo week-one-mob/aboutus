@@ -3,6 +3,10 @@ font-family: 'Montserrat', sans-serif;*/
 
 body {
     background-color: pink;
+    max-width: 600px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 h1, h2, h3 {
     font-family: 'Cute Font', cursive;
