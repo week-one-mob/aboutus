@@ -18,4 +18,5 @@ submitButton.addEventListener('click', () => {
     const foodInputAnswer = foodInput.value;
     console.log(drinkInputAnswer, colorInputAnswer, animalInputAnswer, heightInputAnswer, foodInputAnswer);
 
+
 });
