@@ -1,4 +1,4 @@
-import scoreAnswers from './score-answers.js';
+//import scoreAnswers from './score-answers.js';
 
 const submitButton = document.getElementById ('submit-button');
 const drinkInput = document.getElementById ('drink-answer');
@@ -9,3 +9,7 @@ const foodInput = document.getElementById ('food-answer');
 const quizResults = document.getElementById ('quiz-results');
 
 
+console.log("hello world");
+submitButton.addEventListener('click', () => {
+    console.log("called");
+});
