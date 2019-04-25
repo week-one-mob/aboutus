@@ -1,4 +1,4 @@
-//import scoreAnswers from './score-answers.js';
+import scoreAnswers from './scoreAnswers.js'
 
 const submitButton = document.getElementById ('submit-button');
 const drinkInput = document.getElementById ('drink-answer');
