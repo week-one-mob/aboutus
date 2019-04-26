@@ -2,14 +2,20 @@ export default scoreAnswers;
 
 function scoreAnswers(drinkAnswer, colorAnswer, animalAnswer, foodAnswer, heightAnswer) {
     drinkAnswer = drinkAnswer.toLowerCase();
-    foodAnswer = foodAnswer.toLowerCase();
-    heightAnswer = heightAnswer.toLowerCase();
     colorAnswer = colorAnswer.toLowerCase();
     animalAnswer = animalAnswer.toLowerCase();
+    foodAnswer = foodAnswer.toLowerCase();
+    heightAnswer = heightAnswer.toLowerCase();
 
     let score = 0;
 
+    if(colorAnswer === 'aqua'){
+        score++;
+    }
     if(drinkAnswer === 'tequila'){
+        score++;
+    }
+    if(animalAnswer === 'raccoon'){
         score++;
     }
     if(foodAnswer === 'hippeas'){
@@ -17,12 +23,7 @@ function scoreAnswers(drinkAnswer, colorAnswer, animalAnswer, foodAnswer, height
     }
     if(heightAnswer === '5.7'){
         score++;
-    }
-    if(colorAnswer === 'aqua'){
-        score++;
-    }
-    if(animalAnswer === 'raccoon'){
-        score++;
+        console.log("hello");
     }
 
     return score;

@@ -18,5 +18,23 @@ submitButton.addEventListener('click', () => {
     const foodInputAnswer = foodInput.value;
     console.log(drinkInputAnswer, colorInputAnswer, animalInputAnswer, heightInputAnswer, foodInputAnswer);
 
+    if(drinkInputAnswer.trim() === '' ||colorInputAnswer.trim() === '' || animalInputAnswer.trim() === '' || heightInputAnswer.trim() === '' || foodInputAnswer.trim() === ''){
+        alert('All answers required');
+        return;
+    }
+    
+    const score = scoreAnswers(drinkInputAnswer, colorInputAnswer, animalInputAnswer, foodInputAnswer, heightInputAnswer);
 
+    const message = 'You got ' + score + '/5 correct!!!';
+
+    quizResults.textContent = message;
+
+    if(score < 2) {
+        quizResults.classList.add('bad');
+        quizResults.classList.remove('good');
+    }
+    else {
+        quizResults.classList.add('good');
+        quizResults.classList.remove('bad');
+    }
 });
