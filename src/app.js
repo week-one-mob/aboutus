@@ -1,4 +1,4 @@
-import scoreAnswers from './scoreAnswers.js'
+import scoreAnswers from './scoreAnswers.js';
 
 const submitButton = document.getElementById ('submit-button');
 const drinkInput = document.getElementById ('drink-answer');
@@ -8,17 +8,15 @@ const heightInput = document.getElementById ('height-answer');
 const foodInput = document.getElementById ('food-answer');
 const quizResults = document.getElementById ('quiz-results');
 
-
 submitButton.addEventListener('click', () => {
-    console.log("called");
+
     const drinkInputAnswer = drinkInput.value;
     const colorInputAnswer = colorInput.value;
     const animalInputAnswer = animalInput.value;
     const heightInputAnswer = heightInput.value;
     const foodInputAnswer = foodInput.value;
-    console.log(drinkInputAnswer, colorInputAnswer, animalInputAnswer, heightInputAnswer, foodInputAnswer);
 
-    if(drinkInputAnswer.trim() === '' ||colorInputAnswer.trim() === '' || animalInputAnswer.trim() === '' || heightInputAnswer.trim() === '' || foodInputAnswer.trim() === ''){
+    if(drinkInputAnswer.trim() === '' || colorInputAnswer.trim() === '' || animalInputAnswer.trim() === '' || heightInputAnswer.trim() === '' || foodInputAnswer.trim() === ''){
         alert('All answers required');
         return;
     }

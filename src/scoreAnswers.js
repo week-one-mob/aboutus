@@ -23,7 +23,6 @@ function scoreAnswers(drinkAnswer, colorAnswer, animalAnswer, foodAnswer, height
     }
     if(heightAnswer === '5.7'){
         score++;
-        console.log("hello");
     }
 
     return score;
